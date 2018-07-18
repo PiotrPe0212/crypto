@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: #fff;
+    background-image: url(../img/bcbg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    height: 10vh;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header::after {
+    position: absolute;
+    top: 10vh;
+    content: "";
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 5vh solid #000;
+}
+
+section {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section i {
+    position: relative;
+    top: 8px;
+}
+
+section>div:first-of-type {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#cryptoList,
+#normalMoney {
+    width: 150px;
+    height: 250px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    visibility: hidden;
+}
+
+ul>li,
+section p,
+#buy
+ {
+    background-color: rgba(165, 165, 165, 0.5);
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    border: solid rgb(165, 165, 165) 2px;
+    border: solid rgba(165, 165, 165, 0.5) 2px;
+    background-clip: padding-box;
+}
+
+section p,
+#buy {
+    margin: 0;
+    display: inline-block;
+    border: rgb(70, 70, 70) solid 2px;
+    font-weight: bold;
+}
+
+ul>li:hover {
+    background-color: rgba(104, 104, 104, 0.75);
+}
+
+h2 {
+    text-align: center;
+}
+
+#buy {
+    width: 150px;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 5vh;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+footer::before {
+    position: absolute;
+    bottom: 5vh;
+    content: "";
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 5vh solid #000;
+}

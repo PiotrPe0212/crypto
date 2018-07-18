@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kryptowaluty</title>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <h1>Kursy kryptowalut</h1>
+        </header>
+        <section>
+            <div>
+                <div id="cryptoList">
+                    <i onclick="openList(0)" class="fas fa-align-justify fa-2x" id="buttonCrypto"></i>
+                    <p id="currentCrypto">BTC</p>
+                    <ul>
+                        <li onclick="choose(0)">BTC</li>
+                        <li onclick="choose(1)">LTC</li>
+                        <li onclick="choose(2)">ETH</li>
+                        <li onclick="choose(3)">ZEC</li>
+                        <li onclick="choose(4)">DASH</li>
+                        <li onclick="choose(5)">XRP</li>
+                    </ul>
+                </div>
+                <div id="normalMoney">
+                    <i onclick="openList(1)" class="fas fa-align-justify fa-2x" id="buttonNormal"></i>
+                    <p id="currentNormal">EUR</p>
+
+                    <ul>
+                        <li onclick="choose(6)">EUR</li>
+                        <li onclick="choose(7)">USD</li>
+                        <li onclick="choose(8)">GBP</li>
+                        <li onclick="choose(9)">PLN</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2>Kurs</h2>
+                <div id="buy"></div>
+            </div>
+            <!-- <div>
+    <h2>Sprzedaż</h2>
+<div id="sell"></div>
+</div> -->
+
+        </section>
+        <footer>
+            <p>Copyright © Piotr Pietraszek</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
