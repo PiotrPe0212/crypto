@@ -32,6 +32,7 @@ close = () => {
 }
 
 choose = (x) => {
+    buyValue.innerHTML ='<span class="dot dot1"></span><span class="dot dot2"></span><span class="dot dot3"></span>';
     if (x < 6) {
         let text = listElements[x].textContent;
         currentCrypto.innerHTML = text;

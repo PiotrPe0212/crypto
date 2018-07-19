@@ -1,0 +1,26 @@
+@media all and (max-width: 1024px){
+    section{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media all and (max-width: 768px){
+    ul{
+        margin-left: 25px;
+        }
+
+}
+@media all and (max-width: 480px){
+    ul{
+        margin-left:0;
+    }
+    ul>li,
+    section p,
+    #buy
+     {
+width: 70px;
+
+     }
+}
