@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
         crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rwd.css">
     <title>Kryptowaluty</title>
@@ -21,8 +21,10 @@
         <section>
             <div>
                 <div id="cryptoList">
-                   <div> <i onclick="openList(0)" class="fas fa-align-justify fa-2x" id="buttonCrypto"></i>
-                    <p id="currentCrypto">BTC</p></div>
+                    <div>
+                        <i onclick="openList(0)" class="fas fa-align-justify fa-2x" id="buttonCrypto"></i>
+                        <p id="currentCrypto">BTC</p>
+                    </div>
                     <ul>
                         <li onclick="choose(0)">BTC</li>
                         <li onclick="choose(1)">LTC</li>
@@ -33,8 +35,10 @@
                     </ul>
                 </div>
                 <div id="normalMoney">
-                    <div> <i onclick="openList(1)" class="fas fa-align-justify fa-2x" id="buttonNormal"></i>
-                    <p id="currentNormal">EUR</p></div>
+                    <div>
+                        <i onclick="openList(1)" class="fas fa-align-justify fa-2x" id="buttonNormal"></i>
+                        <p id="currentNormal">EUR</p>
+                    </div>
 
                     <ul>
                         <li onclick="choose(6)">EUR</li>
@@ -46,14 +50,12 @@
             </div>
             <div>
                 <h2>Kurs</h2>
-                <div id="loader"></span></div>
-                <div id="buy"><span class="dot dot1"></span><span class="dot dot2"></span><span class="dot dot3"></span></div>
+                <div id="buy">
+                    <span class="dot dot1"></span>
+                    <span class="dot dot2"></span>
+                    <span class="dot dot3"></span>
+                </div>
             </div>
-            <!-- <div>
-    <h2>Sprzedaż</h2>
-<div id="sell"></div>
-</div> -->
-
         </section>
         <footer>
             <p>Copyright © Piotr Pietraszek</p>

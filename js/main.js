@@ -1,17 +1,19 @@
-const buttonCrypto = document.getElementById("buttonCrypto"),
+const
+    buttonCrypto = document.getElementById("buttonCrypto"),
     buttonNormal = document.getElementById("buttonNormal"),
     list = Array.from(document.getElementsByTagName("ul")),
     listElements = Array.from(document.getElementsByTagName("li"));
 
-let cryptoValue;
-let buyObject;
-let currentCrypto = document.getElementById("currentCrypto"),
+let
+    cryptoValue,
+    buyObject,
+    currentCrypto = document.getElementById("currentCrypto"),
     currentNormal = document.getElementById("currentNormal"),
     chosenNormal = 'EUR',
     chosenCrypto = 'BTC',
     buyValue = document.getElementById("buy"),
-    sellValue = document.getElementById("sell")
-cryptoNumber = 1;
+    sellValue = document.getElementById("sell"),
+    cryptoNumber = 1;
 
 openList = (x) => {
     list[x].style.visibility = 'visible';
@@ -32,7 +34,7 @@ close = () => {
 }
 
 choose = (x) => {
-    buyValue.innerHTML ='<span class="dot dot1"></span><span class="dot dot2"></span><span class="dot dot3"></span>';
+    buyValue.innerHTML = '<span class="dot dot1"></span><span class="dot dot2"></span><span class="dot dot3"></span>';
     if (x < 6) {
         let text = listElements[x].textContent;
         currentCrypto.innerHTML = text;
@@ -62,8 +64,6 @@ choose = (x) => {
                 cryptoNumber = 52;
                 break;
             }
-
-
         }
     }
 
@@ -86,10 +86,9 @@ refresh = () => {
                 buyValue.innerHTML = (buyObject.data.quotes.GBP.price).toFixed(3);
             else if (chosenNormal == 'PLN')
                 buyValue.innerHTML = (buyObject.data.quotes.PLN.price).toFixed(3);
-
         }
     };
-    console.log(chosenNormal)
+
     moneyData.open("GET", `https://api.coinmarketcap.com/v2/ticker/${cryptoNumber}/?convert=${chosenNormal}`, true);
     moneyData.send();
 }
