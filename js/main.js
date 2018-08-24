@@ -15,7 +15,7 @@ let
     sellValue = document.getElementById("sell"),
     cryptoNumber = 1;
 
-openList = (x) => {
+openList = (x, event) => {
     list[x].style.visibility = 'visible';
     listElements.forEach((listElement) => {
         listElement.style.display = "block";
